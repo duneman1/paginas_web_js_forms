@@ -14,16 +14,29 @@
     <header>
         <h1>Formulario Interactivo</h1>
     </header>
-    <form action="">
+    <form action="" id="formInicio">
         <div class="option-group">
-           <input type="checkbox" name="mas" id="mas">
-           <label for="mas">Deseo más información</label>
+            <input type="checkbox" name="mas" id="mas">
+            <label for="mas">Deseo más informacion</label>
         </div>
-        
     </form>
-    <form action="" class="hide">
-        <p>Aqui va el formulario</p>
-    </form>
+    <form action="" class="hide" id="formFinal">
+        <div class="control-group">
+            <label for="genero">Genero</label>
+            <select name="genero" id="genero">
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="autor">Autor</label>
+            <select name="autor" id="autor" disabled>
+                <option value=""></option>
+                <option value="">Sin opciones</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit" id="btnEnviar" disabled title="Selecciona genero y autor para activarlo">Enviar</button>
+            <button type="button" id="btnRaro">Enviar por libre</button>
+        </div>
 
 </body>
 
