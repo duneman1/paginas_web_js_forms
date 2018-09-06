@@ -52,13 +52,13 @@ export class App {
             this.aGeneros.shift()
             this.crearSelect(this.aGeneros, this.dom.slGenero, i-1)
             this.generosFirst = false
+            this.dom.slAutores.disabled = false
             this.dom.btnEnviar.disabled = false
         }
         i = this.dom.slGenero.selectedIndex
         console.dir( i )
         console.dir( this.dom.slGenero[i])
         console.log(this.aGeneros[i].autores)
-        this.dom.slAutores.disabled = false
         this.crearSelect(this.aGeneros[i].autores, this.dom.slAutores)
     }
 
