@@ -3,9 +3,10 @@ function main() {
     // let inApellido = document.querySelector('#apellido')
 
     let aInputs = document.querySelectorAll('.val')
-
     let btnEnviar = document.querySelector('#enviar')
     let formForm1 = document.querySelector('#form1')
+
+    //aInputs[1].focus()
 
     btnEnviar.addEventListener('click', preEnviar)
     formForm1.addEventListener('submit', enviar)
@@ -39,10 +40,10 @@ function main() {
             }
             msg = `<span class="h6">${msg}</span>`
 
-
             element.nextElementSibling.innerHTML = msg   
             validControl = false
             element.nextElementSibling.classList.remove('hide')
+            element.focus() // Esto es para darle foco cuando de error es funcion de ES
         } else {
             element.nextElementSibling.innerHTML = ''
             validControl = true
