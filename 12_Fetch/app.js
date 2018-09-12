@@ -37,18 +37,19 @@ export class App {
                 )
                 break;
             case 'btnJson':
-                fetch(JSON, {method:'GET' }).then(
-                    (response) => {return response.json()}
+                fetch(JSON, {method: 'GET'}).then(
+                    (response) => { return response.json()}
                 ).then(
-                    (data) => {
-                        console.dir(data)
-                        this.mostrarDatos(data)
-                    }
+                    (data) => {this.mostrarDatos(data)}
                 )
                 break;  
             case 'btnError':  
-                /* new AjaxService('GET', 'error', '', 
-                    this.mostrarError.bind(this)) */
+                fetch('error', {method: 'GET'}).then(
+                    (response) => {
+                        console.log(response)
+                        this.mostrarError(response) 
+                    }
+                )
             break;                   
         }
     } 
@@ -68,7 +69,8 @@ export class App {
     }
 
     mostrarError(oDatos) {
-        this.ndError.innerHTML = oDatos.error
+        let error = oDatos.status + ' : ' + oDatos.statusText
+        this.ndError.innerHTML = error
         this.ndOutput.innerHTML = ''
     }
 }
