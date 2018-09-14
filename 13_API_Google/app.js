@@ -6,7 +6,7 @@ export class App {
         this.nOutput = document.querySelector('#output')
         this.clave = ''
 
-        this.buscar = this.buscar.bind(this)
+        this.buscar =  this.buscar.bind(this)
         this.nBtnBuscar.addEventListener('click', this.buscar)
     }
 
@@ -15,16 +15,9 @@ export class App {
         this.clave = this.nClave.value
         if (this.clave) {
             url = this.URLBase + this.clave
-            /* fetch(url, {method: 'GET'}).then(
-                (response) => {
-                    return response.json()
-                }
-            ).then (
-                (data) => {console.log(data)}
-            ) */
             fetch(url, {method: 'GET'}).then(
                 response => response.json()
-            ).then(data => this.mostrar(data))
+            ).then(data =>  this.mostrar(data))
         }
     }
 
@@ -36,26 +29,25 @@ export class App {
             item => {
                 return {
                     autores: item.volumeInfo.authors,
-                    titulo: item.volumeInfo.title
+                    titulo: item.volumeInfo.title, 
+                    icono: item.volumeInfo.imageLinks ? 
+                        item.volumeInfo.imageLinks.smallThumbnail: ''
                 }
             }
         )
         console.log(aLibros)
 
-       aLibros.forEach(item => {
-           let autor = ''
-           if(item.autores) {
-               autor = item.autores.join(', ')
-           }
+         aLibros.forEach(item => {
+            let autor = '&nbsp;'
+            if(item.autores) {
+                autor = item.autores.join(' | ')
+            }
             html += `<dt>${item.titulo}</dt>`
             html += `<dd>${autor}</dd>`
+            html += `<img src="${item.icono}">`
         });
         html += '</dl>'
         this.nOutput.innerHTML = html
-        this.nClave.value = '' 
+        this.nClave.value = ''
     }
 }
-
-/* data.items.forEach(item => {
-            console.log(item.volumeInfo.title)
-        }); */
