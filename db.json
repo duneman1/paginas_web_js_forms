@@ -1,0 +1,35 @@
+{
+  "articulos": [
+    {
+      "author": "Jose Maria",
+      "id": 2,
+      "title": "Todos los lunes"
+    },
+    {
+      "title": "Martes",
+      "author": "Pepe Perez",
+      "editorial": "Boracay",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "tareas": [
+    {
+      "name" : "Clases curso Paginas",
+      "isComplete" : true
+    },
+    {
+      "name" : "Entrevista de Trabajo",
+      "isComplete" : false
+    }
+  ]
+}
