@@ -41,7 +41,8 @@ export class ListaTareas {
             <li>
             <input type="checkbox" name="is-completa" id="check-${data.id}"
                 data-id="${data.id}" ${data.isComplete ? 'checked' : '' }>
-            <span class="nombre-tarea">${data.name}</span>
+            <span class="nombre-tarea ${data.isComplete ? 'hecho' : '' }">
+            ${data.name}</span>
             <span id="borrar-${data.id}" data-id="${data.id}"
                 class="borrar-tarea">🗑️</span>
             </li>
