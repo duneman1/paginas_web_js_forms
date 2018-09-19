@@ -31,11 +31,11 @@
     {
       "id": 2,
       "name": "Entrevista de Trabajo",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "name": "Aprender Angular.js",
-      "isComplete": false,
+      "isComplete": true,
       "id": 3
     }
   ],
