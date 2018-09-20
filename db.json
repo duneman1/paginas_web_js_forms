@@ -26,7 +26,7 @@
     {
       "id": 1,
       "name": "Clases curso Paginas",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 2,
@@ -35,17 +35,12 @@
     },
     {
       "name": "Aprender Angular.js",
-      "isComplete": false,
+      "isComplete": true,
       "id": 3
     },
     {
-      "name": "aprender ingles",
-      "isComplete": true,
-      "id": 4
-    },
-    {
       "name": "aprender aleman",
-      "isComplete": true,
+      "isComplete": false,
       "id": 5
     }
   ],
