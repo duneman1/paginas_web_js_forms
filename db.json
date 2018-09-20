@@ -31,24 +31,49 @@
     {
       "id": 2,
       "name": "Entrevista de Trabajo",
-      "isComplete": true
+      "isComplete": false
     },
     {
       "name": "Aprender Angular.js",
-      "isComplete": true,
+      "isComplete": false,
       "id": 3
+    },
+    {
+      "name": "aprender ingles",
+      "isComplete": true,
+      "id": 4
+    },
+    {
+      "name": "aprender aleman",
+      "isComplete": true,
+      "id": 5
     }
   ],
   "tareas2": [
     {
       "id": 1,
       "name": "Clases curso Paginas",
-      "isComplete": true
+      "isComplete": false
     },
     {
       "id": 2,
       "name": "Entrevista de Trabajo",
       "isComplete": false
+    },
+    {
+      "name": "Aprender Angular.js",
+      "isComplete": false,
+      "id": 3
+    },
+    {
+      "name": "aprender ingles",
+      "isComplete": true,
+      "id": 4
+    },
+    {
+      "name": "aprender aleman",
+      "isComplete": true,
+      "id": 5
     }
   ]
 }
