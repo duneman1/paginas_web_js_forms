@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">Componente Saludar</h4>
+    
+  </div>
+  <div class="card-body">
+    
+    <div class="form-group">
+      <label for="">Nombre</label>
+      <input type="text" [(ngModel)]="nombre" 
+        class="form-control" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+    </div>
+    <button (click)="btnBorrar()" type="button" class="btn btn-danger">Borrar</button>
+  </div>
+  <div class="card-footer text-muted">
+    <p>Hola {{nombre.toUpperCase()}} </p>
+  </div>
+</div>
