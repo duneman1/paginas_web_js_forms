@@ -34,7 +34,7 @@ class Usuario {
 }
 
 let o = {calle: 'Pez', poblacion: 'Teruel'}
-let user1: Usuario = new Usuario('Pepe', 'Perez',  34, 
+let user1: Usuario = new Usuario('Pepe', 'Perez',  34,
             o)
 
 user1.crecer()
