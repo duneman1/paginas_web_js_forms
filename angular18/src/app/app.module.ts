@@ -8,10 +8,14 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { PieComponent } from './pie/pie.component';
 import { LogoComponent } from './logo/logo.component';
 import { MenuComponent } from './menu/menu.component';
-import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { ContactsComponent } from './contacts/contacts.component';
 import { SaludoComponent } from './saludo/saludo.component';
+import { MainComponent } from './main/main.component';
+import { SaludoLocalComponent } from './saludo-local/saludo-local.component';
+import { TareasComponent } from './tareas/tareas.component';
+import { TareasSimpleComponent } from './tareas-simple/tareas-simple.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +24,14 @@ import { SaludoComponent } from './saludo/saludo.component';
     PieComponent,
     LogoComponent,
     MenuComponent,
-    AboutComponent,
     HomeComponent,
-    ContactComponent,
-    SaludoComponent
+    AboutComponent,
+    ContactsComponent,
+    SaludoComponent,
+    SaludoLocalComponent,
+    MainComponent,
+    TareasComponent,
+    TareasSimpleComponent
   ],
   imports: [
     BrowserModule,

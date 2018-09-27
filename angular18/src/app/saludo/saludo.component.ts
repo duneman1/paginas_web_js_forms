@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'cas-saludo',
@@ -6,15 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saludo.component.css']
 })
 export class SaludoComponent implements OnInit {
+  
+  @ViewChild('localNombre')  nodoLocalNombre: ElementRef
 
-  nombre : string
   constructor() { }
 
   ngOnInit() {
-    this.nombre ='Jose'
+    console.log(this.nodoLocalNombre)
+   
   }
 
   btnBorrar() {
-    this.nombre = ''
+    
   }
 }

@@ -1,18 +1,18 @@
 <div class="card">
   <div class="card-header">
     <h4 class="card-title">Componente Saludar</h4>
-    
   </div>
   <div class="card-body">
-    
     <div class="form-group">
-      <label for="">Nombre</label>
-      <input type="text" [(ngModel)]="nombre" 
-        class="form-control" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" #localNombre
+        [(ngModel)]='localNombre.value'
+        name="nombre" id="nombre" placeholder="Nombre">
     </div>
-    <button (click)="btnBorrar()" type="button" class="btn btn-danger">Borrar</button>
+
+    <button (click)="localNombre.value = ''" type="button" class="btn btn-primary">Borrar</button>
   </div>
   <div class="card-footer text-muted">
-    <p>Hola {{nombre.toUpperCase()}} </p>
+    <p>Hola {{localNombre.value}}</p>
   </div>
 </div>
