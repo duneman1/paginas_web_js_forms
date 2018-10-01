@@ -1,9 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
-import { SaludoComponent } from '../saludo/saludo.component';
-import { SaludoLocalComponent } from '../saludo-local/saludo-local.component';
+
 import { FormsModule } from '@angular/forms';
+import { SaludoComponent } from './saludo/saludo.component';
+import { SaludoLocalComponent } from './saludo-local/saludo-local.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -14,7 +15,7 @@ describe('HomeComponent', () => {
       declarations: [ 
         HomeComponent,
         SaludoComponent,
-        SaludoLocalComponent
+        SaludoLocalComponent,
       ],
       imports : [
         FormsModule
