@@ -22,7 +22,7 @@ describe('workspace-project Tareas', () => {
 
   beforeEach(() => {
   tareasPage = new TareasPage();
-  });
+  });  
 
   it('should display "Proyecto" in h1', () => {
     tareasPage.navigateTo();
