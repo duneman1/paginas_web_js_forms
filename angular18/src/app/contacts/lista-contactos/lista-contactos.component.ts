@@ -21,7 +21,10 @@ export class ListaContactosComponent implements OnInit {
   ngOnInit() {
     //this.aContactos = USERS
     this.aContactos = []
-    this.usuarios.getLista().then(
+    /* this.usuarios.getLista().then(
+      (response:any)=> { this.aContactos = response}
+    ) */
+    this.usuarios.getListaAA().then(
       (response:any)=> { this.aContactos = response}
     )
     

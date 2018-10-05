@@ -1,3 +1,22 @@
 <p>
-  about works!
+    about works en {{!empresa ? 'mi empresa' : empresa}}!
+    <!-- <mat-checkbox>Me gusta material</mat-checkbox> -->
 </p>
+<p>
+    Empresa Cliente: {{cliente?.nombre}}
+</p>
+
+<cas-articulo 
+    [titulo]="'Angular Avanzado'" 
+    [autor]="'Pepe Perez'">
+    <h2>Acerca de Angular</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ad ea necessitatibus totam voluptatem, placeat pariatur. Quod minima temporibus animi inventore at tenetur, odit voluptatum a, omnis tempore, dolore delectus!</p>
+    <p>Fugiat velit itaque esse quo minima, sit nulla natus cupiditate. Quibusdam placeat quis perferendis et error commodi aperiam inventore cupiditate eligendi autem sunt minima officia, fuga nulla, dolor soluta molestiae!</p>
+    <p>Sequi ab, suscipit ipsam ducimus et quam nobis repellat fuga eum consectetur, accusamus odio impedit fugiat officia maxime iure facilis quidem nulla saepe soluta. Deleniti dolore in illum praesentium officia.</p>
+    
+</cas-articulo>
+
+<cas-articulo 
+    [titulo]="'Angular Avanzado'" 
+    [autor]="'Pepe Perez'">
+</cas-articulo>
